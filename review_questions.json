@@ -1,0 +1,37 @@
+{
+  "category": {
+    "type": "choice",
+    "instructions": "What is the main topic of this app review?",
+    "criteria": {
+      "Bug/Crash": "App crashes, errors, or features not working",
+      "Notifications": "Push notifications late, missing or wrong",
+      "Login/Auth": "Sign-in, Face ID, account access",
+      "Sync/Data": "Syncing, data loss, cross-device data",
+      "Performance": "Speed, lag, slowness",
+      "Positive feedback": "Praise for design, widgets, or the app overall"
+    }
+  },
+  "sentiment": {
+    "type": "choice",
+    "instructions": "What is the reviewer's overall sentiment?",
+    "criteria": {
+      "Positive": null,
+      "Neutral": null,
+      "Negative": null
+    }
+  },
+  "severity": {
+    "type": "score",
+    "instructions": "How urgently does the iOS team need to act on this review?",
+    "criteria": [
+      "No action needed",
+      "Minor polish",
+      "Important issue affecting some users",
+      "Critical: data loss, crash, or can't use the app"
+    ]
+  },
+  "is_bug": {
+    "type": "noul",
+    "instructions": "This review reports a software bug that engineering should fix."
+  }
+}
